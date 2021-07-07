@@ -9,5 +9,10 @@ module.exports = {
         views: "@/views"
       }
     }
+  },
+
+  lintOnSave: false,
+  devServer: {
+    host: "0.0.0.0"
   }
 };
