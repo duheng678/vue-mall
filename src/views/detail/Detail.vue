@@ -7,6 +7,7 @@
       :pullUpLoad="true"
       ref="scroll"
       @contentScroll="contentScroll"
+      :data="[swiperImage,goodsList]"
     >
       <detail-swiper :swiper-image="swiperImage" />
       <detail-base-info :goods="goods" />

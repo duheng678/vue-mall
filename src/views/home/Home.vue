@@ -17,6 +17,7 @@
       :pull-up-load="true"
       @pullingUp="loadMore"
       @contentScroll="contentScroll"
+      :data="[showGoods, banners]"
     >
       <home-swiper
         class="home-swiper"

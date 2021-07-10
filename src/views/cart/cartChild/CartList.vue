@@ -1,5 +1,10 @@
 <template>
-  <better-scroll class="content" :pullUpLoad="true" ref="scroll">
+  <better-scroll
+    class="content"
+    :pullUpLoad="true"
+    ref="scroll"
+    :data="[cartList]"
+  >
     <cart-list-item
       v-for="(item, index) in cartList"
       :key="index"
