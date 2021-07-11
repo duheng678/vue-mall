@@ -9,7 +9,7 @@
       <span>全选</span>
     </div>
     <div class="price">合计：{{ totalPrice }}</div>
-    <div class="calculate" @click="calcClick">去计算({{ checkLength }})</div>
+    <div class="calculate" @click="calcClick">结算({{ checkLength }})</div>
   </div>
 </template>
 
@@ -51,7 +51,11 @@ export default {
         .toFixed(2);
     },
     checkLength() {
-      return this.cartList.filter(item => item.isCheck).length;
+      return this.cartList
+        .filter(item => item.isCheck)
+        .reduce((preValue, item) => {
+          return (preValue += item.count);
+        }, 0);
     }
   }
 };
