@@ -2,7 +2,7 @@ import axios from "axios";
 
 export function request(config) {
   const instance = axios.create({
-    baseURL: "http://", //为了不暴露端口，这里不展示
+    baseURL: "http://152.136.185.210:7878/api/m5",
     timeout: 3000
   });
   instance.interceptors.request.use(
