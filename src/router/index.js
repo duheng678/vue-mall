@@ -17,8 +17,7 @@ const router = new VueRouter({
     { path: "/cart", component: Cart },
     { path: "/profile", component: Profile },
     { path: "/detail:iid", component: Detail }
-  ],
-  mode: "history"
+  ]
 });
 
 export default router;
