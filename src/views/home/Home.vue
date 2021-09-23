@@ -98,7 +98,6 @@ export default {
     //将轮播图和推荐图片保存在data中
     getHomeMultidata() {
       getHomeMultidata().then(res => {
-        console.log(res);
         this.banners = res.data.banner.list;
         this.recommends = res.data.recommend.list;
       });

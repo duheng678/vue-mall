@@ -1,19 +1,14 @@
-# mall
+## 基于 Vue2 完成的购物 app
 
-## Project setup
-```
-npm install
-```
+1 使用 Vue/Cli3 完成购物街的首页，商品详情页，分类页，购物车以及个人主页。
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+2、将 axios 封装成函数发送网络请求。
 
-### Compiles and minifies for production
-```
-npm run build
-```
+3、引入 better-scroll 实现页面滑动以及上拉加载。
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+4、组件化开发，尽可能的封装组件并复用。
+
+5、性能优化：防抖函数、路由懒加载、图片懒加载、第三方库消除移动端 300ms 延迟等。
+为避免接口暴露，源码未提供接口
+
+[项目预览](http://heng678.gitee.io/vue-mall)
